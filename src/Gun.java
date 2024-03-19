@@ -2,7 +2,7 @@ import exceptions.InvalidCapacityException;
 import exceptions.InvalidPinException;
 
 public class Gun {
-    private int capacity = 10;
+    private int capacity;
     private String pin;
     private int bullets = 0;
 
@@ -43,6 +43,7 @@ public void shoot(String pin){
     if(bullets > 0) {
         bullets -= 1;
     }
+
 }
 }
 
